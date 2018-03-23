@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Micro Rogue Like Exam</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Micro Rogue Like Exam</h1>
+    <h2>まず最初にやるべきこと</h2>
+    <p><code>micro-rogue-game.js</code>を開いて読んでみてください。</p>
+    <p>あらかた読めたら、Web Inspectorを用いて、このシンプルなローグライク<small>(と言えるかどうか怪しいですが)</small>を動かしてみてください。</p>
+    <h2>課題 #1</h2>
+    <h3>概要</h3>
+    <p>このローグライクゲームには、マップ表示がありません。</p>
+    <p>プレイヤーは、今自分がどこにいるのか、フィードバックを視覚的に得られません。</p>
+    <p class="lead">課題 #1: このローグライクゲームのマップを文字列で取得できる<code>rogue.map.getAsText</code>関数を作成してください。</p>
+    <h3>仕様</h3>
+    <p><code>rogue.map.getAsText</code>は引数を持たない関数で、戻り値は文字列です。改行コードは<code>\n</code>を用いてください。</p>
+    <p>プレイヤーは<code>@</code>、地面は<code>.</code>、上下に挟む壁は<code>-</code>、左右に挟む壁は<code>|</code>になります。</p>
+    <p>また、部屋の4隅の角は、上下に挟む壁<code>-</code>で表現します。</p>
+    <p>例えば、部屋の広さ(歩ける床の縦横幅)が8x5で、プレイヤーが部屋の左上から1歩ずつ右下に動いた位置にいるとするならば戻り値は以下のようになります。</p>
+  <pre><code>----------
+|........|
+|.@......|
+|........|
+|........|
+|........|
+----------</code></pre>
+  </div>
+  <script src="micro-rogue-game.js"></script>
+</body>
+</html>
